@@ -1,0 +1,47 @@
+% packages used by kableExtra
+\usepackage{pdflscape}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage{float}
+\usepackage{makecell}
+% Caption justification
+\usepackage{caption}
+\captionsetup{justification=raggedright,singlelinecheck=false}
+% Box shading
+\usepackage{framed,color}
+\definecolor{shadecolor}{RGB}{248,248,248}
+
+\makeatletter
+\let\@fnsymbol\@arabic %footnote numbers in title page not symbols
+\newenvironment{kframe}{%
+\medskip{}
+\setlength{\fboxsep}{.8em}
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\renewenvironment{Shaded}{\begin{kframe}}{\end{kframe}}
+
+%format equation cross references
+\usepackage{cleveref}
+
+\renewcommand{\eqref}{\Cref}
+\Crefformat{equation}{#2#1#3}
+
+% allow landscape and portrait layouts
+\usepackage{lscape}
+\newcommand{\blandscape}{\begin{landscape}}
+\newcommand{\elandscape}{\end{landscape}}
+

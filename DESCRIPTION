@@ -1,0 +1,20 @@
+Package: twriTemplates
+Type: Package
+Title: Templates for TWRI reports
+Version: 0.1.001
+Authors@R:
+    person(given = "Michael",
+    family = "Schramm",
+    role = c("aut", "cre"),
+    email = "michael.schramm@ag.tamu.edu",
+    comment = c(ORCID = "0000-0003-1876-6592"))
+Description: Provides word and pdf Rmarkdown templates that meet TWRI branding guidance.
+License: CC0
+Encoding: UTF-8
+LazyData: true
+Imports:
+    officedown,
+    bookdown
+Suggests:
+    flextable
+RoxygenNote: 7.1.1
