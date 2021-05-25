@@ -4,6 +4,9 @@
 # twriTemplates
 
 <!-- badges: start -->
+
+[![R build
+status](https://github.com/TxWRI/twriTemplates/workflows/R-CMD-check/badge.svg)](https://github.com/TxWRI/twriTemplates/actions)
 <!-- badges: end -->
 
 This package provides:
