@@ -6,7 +6,7 @@
 \usage{
 theme_TWRI_fig(
   base_size = 8.5,
-  base_family = "Arial Nova",
+  base_family = "Arial",
   base_line_size = 0.5,
   base_rect_size = 0.5
 )

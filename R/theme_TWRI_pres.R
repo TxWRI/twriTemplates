@@ -1,17 +1,18 @@
-#' a [ggplot2] theme formatted in the TWRI style
+#' a [ggplot2] theme formatted in the TWRI style for presentations
 #'
-#' Provides a [ggplot2] theme formatted consistent with TWRI style guidance.
+#' Provides a [ggplot2] theme formatted consistent with TWRI style guidance. Figure aesthetics prioritize design and legibility for use in power point presentations. The intended output is 10 inches by 7.5 inches as 200dpi.
 #'
-#' @param base_family defaults to \code{"Arial"}. Generally, use a sensible sans serif font that is available on your system.
+#' @param base_family defaults to \code{"Moriston_personal"}. Generally, use a sensible sans serif font that is available on your system.
 #' @param base_size default text size in px
 #' @param base_line_size default line size
 #' @param base_rect_size default rect size
 #' @import ggplot2
 #' @export
-theme_TWRI_fig <- function(base_size = 8.5,
-                           base_family = "Arial",
-                           base_line_size = 0.5,
-                           base_rect_size = 0.5) {
+theme_TWRI_pres <- function(base_size = 16,
+                            base_family = "Moriston_personal",
+                            base_line_size = 1,
+                            base_rect_size = 1) {
+
   half_line <- base_size / 2L
 
   ggplot2::theme(

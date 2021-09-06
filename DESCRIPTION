@@ -15,7 +15,10 @@ LazyData: true
 Imports:
     bookdown,
     ggplot2,
-    officedown
+    officedown,
+    systemfonts
 Suggests:
-    flextable
+    flextable,
+    ragg,
+    tinytex
 RoxygenNote: 7.1.1
