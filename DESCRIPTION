@@ -13,8 +13,9 @@ License: CC0
 Encoding: UTF-8
 LazyData: true
 Imports:
-    officedown,
-    bookdown
+    bookdown,
+    ggplot2,
+    officedown
 Suggests:
     flextable
 RoxygenNote: 7.1.1
