@@ -28,9 +28,22 @@ $endif$
 \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
 \newcommand{\euro}{€}
 
+% Check to see if this font is installed system-wide
+\IfFontExistsTF{Minion Pro-Regular}{
 \setmainfont{Minion Pro-Regular}[BoldFont={Minion Pro-Bold},
 ItalicFont={Minion Pro-It},
 BoldItalicFont={Minion Pro MediumIt}]
+}{
+\setmainfont{TeX Gyre Termes}
+}
+
+\IfFontExistsTF{Open Sans-Regular}{
+\setsansfont{Open Sans-Regular}[BoldFont={OpenSans-Bold},
+ItalicFont={OpenSans-Italic},
+BoldItalicFont={OpenSans-BoldItalic}]
+}{
+\setsansfont{TeX Gyre Heros}
+}
 
 \setsansfont{Open Sans-Regular}[BoldFont={OpenSans-Bold},
 ItalicFont={OpenSans-Italic},
