@@ -21,5 +21,5 @@ theme_TWRI_pres(
 \item{base_rect_size}{default rect size}
 }
 \description{
-Provides a [ggplot2] theme formatted consistent with TWRI style guidance.
+Provides a [ggplot2] theme formatted consistent with TWRI style guidance. Figure aesthetics prioritize design and legibility for use in power point presentations. The intended output is 10 inches by 7.5 inches as 200dpi.
 }
