@@ -5,6 +5,8 @@
   fonts <- systemfonts::system_fonts()
 
   try(init_fonts(fonts), outFile = "Could not register required fonts, please download and install from: https://agrilife.tamu.edu/wp-content/uploads/2021/03/AgriFonts.zip")
+
+  message("See https://github.com/TxWRI/twriTemplates for more details, use the Issues tab if you have questions.")
 }
 
 
