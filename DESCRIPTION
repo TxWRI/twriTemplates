@@ -23,6 +23,7 @@ Suggests:
     testthat (>= 3.0.0),
     flextable,
     ragg,
+    rmarkdown,
     tinytex
 RoxygenNote: 7.1.1
 Depends: 
