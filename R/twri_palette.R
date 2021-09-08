@@ -3,6 +3,7 @@
 #' This is a test palette
 #'
 #' @name twri_pal
+#' @export
 
 twri_pal <- c(
   "#0054a4",#`TWRI Blue`
