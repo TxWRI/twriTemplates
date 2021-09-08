@@ -34,8 +34,13 @@ $endif$
 ItalicFont={Minion Pro-It},
 BoldItalicFont={Minion Pro MediumIt}]
 }{
-\usepackage{tex-gyre}
-\setmainfont{texgyretermes-regular.otf}
+\setmainfont{texgyretermes}[
+  UprightFont = *-regular ,
+  BoldFont = *-bold ,
+  ItalicFont = *-italic ,
+  BoldItalicFont = *-bolditalic ,
+  Extension = .otf ,
+  Scale = 1.0 ]
 }
 
 \IfFontExistsTF{Open Sans-Regular}{
@@ -43,7 +48,13 @@ BoldItalicFont={Minion Pro MediumIt}]
 ItalicFont={OpenSans-Italic},
 BoldItalicFont={OpenSans-BoldItalic}]
 }{
-\setsansfont{texgyreheros-regular.otf}
+\setsansfont{texgyreheros}[
+  UprightFont = *-regular ,
+  BoldFont = *-bold ,
+  ItalicFont = *-italic ,
+  BoldItalicFont = *-bolditalic ,
+  Extension = .otf ,
+  Scale = 1.0 ]
 }
 
 
