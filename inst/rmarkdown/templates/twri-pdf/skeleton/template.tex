@@ -28,13 +28,34 @@ $endif$
 \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
 \newcommand{\euro}{€}
 
+% Check to see if this font is installed system-wide
+\IfFontExistsTF{Minion Pro-Regular}{
 \setmainfont{Minion Pro-Regular}[BoldFont={Minion Pro-Bold},
 ItalicFont={Minion Pro-It},
 BoldItalicFont={Minion Pro MediumIt}]
+}{
+\setmainfont{texgyretermes}[
+  UprightFont = *-regular ,
+  BoldFont = *-bold ,
+  ItalicFont = *-italic ,
+  BoldItalicFont = *-bolditalic ,
+  Extension = .otf ,
+  Scale = 1.0 ]
+}
 
+\IfFontExistsTF{Open Sans-Regular}{
 \setsansfont{Open Sans-Regular}[BoldFont={OpenSans-Bold},
 ItalicFont={OpenSans-Italic},
 BoldItalicFont={OpenSans-BoldItalic}]
+}{
+\setsansfont{texgyreheros}[
+  UprightFont = *-regular ,
+  BoldFont = *-bold ,
+  ItalicFont = *-italic ,
+  BoldItalicFont = *-bolditalic ,
+  Extension = .otf ,
+  Scale = 1.0 ]
+}
 
 
 % $if(monofont)$
