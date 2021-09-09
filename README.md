@@ -30,10 +30,10 @@ remotes::install_github("TxWRI/twriTemplates")
 ### Prerequisites
 
 The Rmarkdown templates assume the required fonts are installed on your
-system. The `Minion Pro` and `Open Sans` fonts among others are used by
-the various templates and themes. We aren’t licensed to distribute some
-of the fonts. Install all the fonts AgriLife provides at the [Marketing
-and Communications branding
+system. The `Minion Pro` font among others are used by the various
+templates and themes. We aren’t licensed to distribute some of the
+fonts. Install all the fonts AgriLife provides at the [Marketing and
+Communications branding
 website](https://agrilife.tamu.edu/marketing-and-communications/resources/branding-agrilife/).
 
 In order to use the pdf template, please install the tinytex package:
@@ -86,7 +86,7 @@ p1 <- Dissolved_Oxygen %>%
              color = Station_ID)) +
   geom_boxplot(alpha = 0.5) +
   geom_jitter(alpha = 0.9, width = 0.1, height = 0) +
-  theme_TWRI_fig() +
+  theme_TWRI_print() +
   scale_color_discrete_twri(name = "Station ID") +
   scale_fill_discrete_twri(name = "Station ID") +
   labs(x = "Station ID", 

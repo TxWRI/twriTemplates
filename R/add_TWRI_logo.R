@@ -17,6 +17,8 @@ add_TWRI_logo <- function(plot,
 
   logo_path <- fs::path_package("twriTemplates", "rmarkdown", "templates", "twri-docx", "skeleton", "twri_logo.png")
 
+  #logo <- magick::image_read_svg(logo_path, width = 2000)
+
   cowplot::ggdraw() +
     cowplot::draw_plot(plot) +
     cowplot::draw_image(logo_path,

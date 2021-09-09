@@ -12,6 +12,6 @@
 
   ## Register desired system fonts
   fonts <- systemfonts::system_fonts()
-  try(init_fonts(fonts), outFile = "Could not register required [Moriston] fonts, please download and install from: https://agrilife.tamu.edu/wp-content/uploads/2021/03/AgriFonts.zip")
+  try(init_fonts(fonts))
 
 }
