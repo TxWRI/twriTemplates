@@ -1,15 +1,15 @@
 #' a [ggplot2] theme formatted in the TWRI style
 #'
-#' Provides a [ggplot2] theme formatted consistent with TWRI style guidance.
+#' Provides a [ggplot2] theme formatted consistent with TWRI style guidance. Use this theme for figures intended for printed reports. The default font is "Open Sans Condensed". The suggest export width is 6.5 inches at 300 dpi.
 #'
-#' @param base_family defaults to \code{"Arial"}. Generally, use a sensible sans serif font that is available on your system.
+#' @param base_family defaults to \code{"OpenSansCondensed_TWRI"}. Which is provided in the package. Generally, use a sensible sans serif font that is available on your system.
 #' @param base_size default text size in px
 #' @param base_line_size default line size
 #' @param base_rect_size default rect size
 #' @import ggplot2
 #' @export
-theme_TWRI_fig <- function(base_size = 8.5,
-                           base_family = "Arial",
+theme_TWRI_print <- function(base_size = 8.5,
+                           base_family = "OpenSansCondensed_TWRI",
                            base_line_size = 0.5,
                            base_rect_size = 0.5) {
   half_line <- base_size / 2L
@@ -150,7 +150,7 @@ theme_TWRI_fig <- function(base_size = 8.5,
     panel.grid = NULL,
     panel.grid.major = ggplot2::element_line(),
     panel.grid.major.x = ggplot2::element_blank(),
-    panel.grid.major.y = ggplot2::element_blank(),
+    panel.grid.major.y = ggplot2::element_line(linetype = "dotted", color = "#d9d9d9"),
     panel.grid.minor = ggplot2::element_line(),
     panel.grid.minor.x = ggplot2::element_blank(),
     panel.grid.minor.y = ggplot2::element_blank(),

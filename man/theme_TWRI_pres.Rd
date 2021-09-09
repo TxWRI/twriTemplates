@@ -6,7 +6,7 @@
 \usage{
 theme_TWRI_pres(
   base_size = 16,
-  base_family = "Moriston_personal",
+  base_family = "Oswald_TWRI",
   base_line_size = 1,
   base_rect_size = 1
 )
