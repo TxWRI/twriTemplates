@@ -1,3 +1,10 @@
+# twriTemplates 0.2.1
+## Minor bug fixes
+
+* fixed issue where gridlines overlapped axis lines (#8)
+* fix latex error when chucnk code is not displayed (#7)
+
+
 # twriTemplates 0.2.0
 
 * Initial package release.
