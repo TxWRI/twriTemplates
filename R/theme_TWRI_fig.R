@@ -8,7 +8,7 @@
 #' @param base_rect_size default rect size
 #' @import ggplot2
 #' @export
-theme_TWRI_print <- function(base_size = 8.5,
+theme_TWRI_print <- function(base_size = 9,
                            base_family = "OpenSansCondensed_TWRI",
                            base_line_size = 0.5,
                            base_rect_size = 0.5) {
@@ -139,8 +139,8 @@ theme_TWRI_print <- function(base_size = 8.5,
 
     # panel attributes
 
-    panel.background = ggplot2::element_rect(fill = NA),
-    panel.border = ggplot2::element_blank(),
+    panel.background = ggplot2::element_blank(),
+    panel.border = ggplot2::element_rect(fill = NA),
     panel.ontop = FALSE,
 
     panel.spacing = ggplot2::unit(6L, "pt"),
