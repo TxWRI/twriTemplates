@@ -35,10 +35,6 @@
 \makeatletter
 \@ifundefined{Shaded}{
 }{\renewenvironment{Shaded}{\begin{kframe}}{\end{kframe}}}
-\@ifpackageloaded{fancyvrb}{%
-  % https://github.com/CTeX-org/ctex-kit/issues/331
-  \RecustomVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\},formatcom=\xeCJKVerbAddon}%
-}{}
 \makeatother
 
 %format equation cross references
