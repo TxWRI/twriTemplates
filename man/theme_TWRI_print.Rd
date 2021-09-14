@@ -5,7 +5,7 @@
 \title{a [ggplot2] theme formatted in the TWRI style}
 \usage{
 theme_TWRI_print(
-  base_size = 8.5,
+  base_size = 9.5,
   base_family = "OpenSansCondensed_TWRI",
   base_line_size = 0.5,
   base_rect_size = 0.5
