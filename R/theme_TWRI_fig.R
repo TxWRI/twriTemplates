@@ -8,7 +8,7 @@
 #' @param base_rect_size default rect size
 #' @import ggplot2
 #' @export
-theme_TWRI_print <- function(base_size = 9,
+theme_TWRI_print <- function(base_size = 9.5,
                            base_family = "OpenSansCondensed_TWRI",
                            base_line_size = 0.5,
                            base_rect_size = 0.5) {
