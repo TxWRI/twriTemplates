@@ -18,6 +18,7 @@ Imports:
     fs,
     ggplot2,
     officedown,
+    rlang,
     systemfonts
 Suggests:
     testthat (>= 3.0.0),
