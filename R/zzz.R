@@ -1,4 +1,4 @@
-init_fonts <- function(fonts) {
+init_fonts <- function(fonts) {# nocov start
 
   ## make sure fonts are installed
   if(length(fonts[fonts$family == "Moriston Personal",]$path) == 0){
@@ -43,5 +43,5 @@ init_fonts <- function(fonts) {
                              bold =  OpenSansCondensed_Bold,
                              italic =  OpenSansCondensed_Italic)
 
-
+  # nocov end
 }

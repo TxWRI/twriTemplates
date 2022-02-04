@@ -4,7 +4,7 @@
 }
 
 
-.onLoad <- function(...){
+.onLoad <- function(...){# nocov start
   ## Use agg here to prevent error messages in add_TWRI_logo
   ## in general, encourage users to utilize ragg package to
   ## maximize export quality.
@@ -13,5 +13,5 @@
   ## Register desired system fonts
   fonts <- systemfonts::system_fonts()
   try(init_fonts(fonts))
-
+  # nocov end
 }
