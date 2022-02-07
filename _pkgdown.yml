@@ -13,4 +13,5 @@ template:
 
 navbar:
   type: dark
-  bg: none
+  structure:
+    right: [github]
