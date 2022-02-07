@@ -6,14 +6,33 @@ author:
   - ^2^ Position, Texas Water Resources Institute, Texas A\&M AgriLife Extension Service
 date: "April 1, 2021"
 output: 
-  twriTemplates::twri_docx:
+  officedown::rdocx_document:
+    reference_docx: format.docx
     plots:
       style: Normal
       align: center
+      fig.lp: 'fig:'
+      topcaption: false
       caption:
         style: Image Caption
         pre: 'Figure '
         sep: '. '
+        tnd: 0
+        tns: '-'
+        fp_text: !expr officer::fp_text_lite(bold = FALSE)
+    tables:
+      style: Table
+      layout: autofit
+      width: 1.0
+      topcaption: true
+      tab.lp: 'tab:'
+      caption:
+        style: Table Caption
+        pre: 'Table '
+        sep: '. '
+        tnd: 0
+        tns: '-'
+        fp_text: !expr officer::fp_text_lite(bold = FALSE)
 bibliography: bibliography.bib
 csl: council-of-science-editors-author-date.csl
 ---
@@ -28,6 +47,7 @@ library(ragg)
 ## this sets our default code chunk options
 knitr::opts_chunk$set(dev = "ragg_png",
                       echo = FALSE,
+                      ## figure chunk options
                       fig.cap = TRUE,
                       fig.width = 6)
 
@@ -101,26 +121,10 @@ block_section(prop_section(type = "nextPage"))
 
 First, second, and third level headings are defined by `#`, `##`, and `###` respectively.
 
-# Unumbered heading {-}
-
-Headings are automatically numbered. If you want a section heading to remain unnumbered use ` {-} ` after the heading. If you don't want any heading numbers, edit the yaml code block at the top of the rmarkdwon document as follows:
-
-```yaml
-output: 
-  twriRmdTemplate::twri_rmd:
-    number_sections : false
-    plots:
-      style: Normal
-      align: center
-      caption:
-        style: Image Caption
-        pre: 'Figure '
-        sep: '. '
-```
 
 # Tables
 
-This is an example of an unformatted table and how we cross-reference that table (Table \@ref(tab:mtcars)).
+This is an example of an unformatted table and how we cross-reference that table ([Table \@ref(tab:mtcars)](#tab:mtcars)).
 
 ```{r tab.cap='this is the builtin mtcars data.', tab.id='mtcars'}
 dat <- mtcars
@@ -128,12 +132,10 @@ head(dat, n = 10)
 ```
 
 
+The [`flextable`](https://davidgohel.github.io/flextable/) package provides additional formatting flexibility when exporting to Word (Table \@ref(tab:mtcarsflex)).
 
-The [`flextable`](https://davidgohel.github.io/flextable/) package provides additional formatting flexibility when exporting to Word.
-
-```{r}
+```{r tab.cap='flextable formatted table.', tab.id='mtcarsflex'}
 ft <- flextable(head(dat, n = 10))
-ft <- set_caption(ft, caption = "Flextable formatted mtcars dataset.")
 ft
 ```
 

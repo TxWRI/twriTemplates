@@ -15,8 +15,8 @@ modified to any locally installed font.}
 
 \item{point_label}{character string - how you want to label to point in a
 legend. If you overlay measured points in the box plot, \code{" - Measured
-values"} is appropriate. If the points only indicate outliers, \code{" -
-values outside the\\ninterquartile range"} is appropriate. This can be
+  values"} is appropriate. If the points only indicate outliers, \code{" -
+  values outside the\\ninterquartile range"} is appropriate. This can be
 custoimized as necessary. Use \code{"\\n"} to indicate where a line break
 should occur.}
 }

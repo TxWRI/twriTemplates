@@ -1,8 +1,23 @@
+# twriTemplates 0.2.2
+
+## Major changes
+
+* `twri_docx()` is depreciated, the docx template now calls officedown directly.
+
+## Minor bug fixes
+
+* twri-docx template includes new chunk options for formatting table and figure 
+captions provided by officedown. (#11)
+
 # twriTemplates 0.2.1
+## New features
+
+* ggplot2_box_legend creates boxplot legend.
+
 ## Minor bug fixes
 
 * fixed issue where gridlines overlapped axis lines (#8)
-* fix latex error when chucnk code is not displayed (#7)
+* fix latex error when chunk code is not displayed (#7)
 
 
 # twriTemplates 0.2.0

@@ -2,7 +2,7 @@
 % Please edit documentation in R/theme_TWRI_fig.R
 \name{theme_TWRI_print}
 \alias{theme_TWRI_print}
-\title{a [ggplot2] theme formatted in the TWRI style}
+\title{a \link{ggplot2} theme formatted in the TWRI style}
 \usage{
 theme_TWRI_print(
   base_size = 9.5,
@@ -21,5 +21,5 @@ theme_TWRI_print(
 \item{base_rect_size}{default rect size}
 }
 \description{
-Provides a [ggplot2] theme formatted consistent with TWRI style guidance. Use this theme for figures intended for printed reports. The default font is "Open Sans Condensed". The suggest export width is 6.5 inches at 300 dpi.
+Provides a \link{ggplot2} theme formatted consistent with TWRI style guidance. Use this theme for figures intended for printed reports. The default font is "Open Sans Condensed". The suggest export width is 6.5 inches at 300 dpi.
 }

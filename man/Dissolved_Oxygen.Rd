@@ -7,13 +7,13 @@
 \format{
 A data frame with 236 rows and 6 variables:
 \describe{
-  \item{Station_ID}{unique water quality monitoring station identifier}
-  \item{Date}{sampling date in yyyy-mm-dd format}
-  \item{Param_Code}{unique parameter code}
-  \item{Param_Desc}{parameter description with units}
-  \item{Average_DO}{mean of dissolved oxygen measurement, in mg/L}
-  \item{Min_DO}{minimum of dissolved oxygen measurement, in mg/L}
-  }
+\item{Station_ID}{unique water quality monitoring station identifier}
+\item{Date}{sampling date in yyyy-mm-dd format}
+\item{Param_Code}{unique parameter code}
+\item{Param_Desc}{parameter description with units}
+\item{Average_DO}{mean of dissolved oxygen measurement, in mg/L}
+\item{Min_DO}{minimum of dissolved oxygen measurement, in mg/L}
+}
 }
 \source{
 https://www80.tceq.texas.gov/SwqmisPublic/public/default.htm
