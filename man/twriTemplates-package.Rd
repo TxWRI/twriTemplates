@@ -10,6 +10,23 @@ Provides word and pdf Rmarkdown templates that meet TWRI branding guidance.
 
 The twriTemplates package provides rmarkdown templates that follow internal brand guidance. It also provides functions for formatting ggplot2 plots that follow brand guides.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/TxWRI/twriTemplates}
+  \item \url{https://txwri.github.io/twriTemplates/}
+  \item Report bugs at \url{https://github.com/TxWRI/twriTemplates/issues}
+}
+
+
+Useful links:
+\itemize{
+  \item \url{https://github.com/TxWRI/twriTemplates}
+  \item \url{https://txwri.github.io/twriTemplates/}
+  \item Report bugs at \url{https://github.com/TxWRI/twriTemplates/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Michael Schramm \email{michael.schramm@ag.tamu.edu} (\href{https://orcid.org/0000-0003-1876-6592}{ORCID})
 
