@@ -1,15 +1,8 @@
 url: https://txwri.github.io/twriTemplates/
 
 template:
+  package: twriTemplates
   bootstrap: 5
-  bootswatch: yeti
-  params:
-    mathjax: true
-  bslib:
-    base_font: {google: "EB Garamond"}
-    heading_font: {google: "Oswald"}
-    code_font: {google: "JetBrains Mono"}
-    font_scale: 1.2
 
 navbar:
   type: dark

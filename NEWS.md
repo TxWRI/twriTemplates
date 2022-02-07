@@ -1,4 +1,9 @@
-# twriTemplates 0.2.3
+# twriTemplates 0.2.2.9999
+
+## Minor changes
+
+* add pkgdown template for other packages
+* use pkgdown to document package
 
 # twriTemplates 0.2.2
 
