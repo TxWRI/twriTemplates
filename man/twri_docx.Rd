@@ -24,6 +24,22 @@ twri_docx(
 \item{base_format}{character, either \code{rmarkdown::word_document} or
 \code{bookdown::word_document2} (default)}
 
+\item{tables}{empty list, used by \code{\link[officedown:rdocx_document]{officedown::rdocx_document()}}}
+
+\item{plots}{empty list, used by \code{\link[officedown:rdocx_document]{officedown::rdocx_document()}}}
+
+\item{lists}{empty list, used by \code{\link[officedown:rdocx_document]{officedown::rdocx_document()}}}
+
+\item{mapstyles}{empty list, used by \code{\link[officedown:rdocx_document]{officedown::rdocx_document()}}}
+
+\item{page_size}{empty list, used by \code{\link[officedown:rdocx_document]{officedown::rdocx_document()}}}
+
+\item{page_margins}{empty list, used by \code{\link[officedown:rdocx_document]{officedown::rdocx_document()}}}
+
+\item{reference_num}{if \code{TRUE} text for references to sections will be the
+section number. If \code{FALSE} the text for references to sections will be the
+section title. Default is \code{TRUE}.}
+
 \item{toc}{logical defaults FALSE. The template utilizes the TOC function in
 Word that can be manually removed or customized.}
 

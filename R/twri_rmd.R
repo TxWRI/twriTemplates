@@ -14,6 +14,15 @@
 #'
 #' @param base_format character, either `rmarkdown::word_document` or
 #'   `bookdown::word_document2` (default)
+#' @param tables empty list, used by [officedown::rdocx_document()]
+#' @param plots empty list, used by [officedown::rdocx_document()]
+#' @param lists empty list, used by [officedown::rdocx_document()]
+#' @param mapstyles empty list, used by [officedown::rdocx_document()]
+#' @param page_size empty list, used by [officedown::rdocx_document()]
+#' @param page_margins empty list, used by [officedown::rdocx_document()]
+#' @param reference_num if `TRUE` text for references to sections will be the
+#'   section number. If `FALSE` the text for references to sections will be the
+#'   section title. Default is `TRUE`.
 #' @param toc logical defaults FALSE. The template utilizes the TOC function in
 #'   Word that can be manually removed or customized.
 #' @param number_sections logical
