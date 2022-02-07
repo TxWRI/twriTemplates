@@ -2,12 +2,15 @@ Package: twriTemplates
 Type: Package
 Title: Templates for TWRI reports
 Version: 0.2.2.9999
-Authors@R:
+Authors@R: c(
     person(given = "Michael",
     family = "Schramm",
     role = c("aut", "cre"),
     email = "michael.schramm@ag.tamu.edu",
-    comment = c(ORCID = "0000-0003-1876-6592"))
+    comment = c(ORCID = "0000-0003-1876-6592")),
+    person(family = "Texas Water Resources Institute", 
+    role = "cph")
+    )
 Description: Provides word and pdf Rmarkdown templates that meet TWRI branding guidance.
 License: CC0
 Encoding: UTF-8
