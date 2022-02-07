@@ -6,7 +6,11 @@ template:
   params:
     mathjax: true
   bslib:
-    base_font: {google: "Alegreya"}
+    base_font: {google: "EB Garamond"}
     heading_font: {google: "Oswald"}
     code_font: {google: "JetBrains Mono"}
+    font_scale: 1.2
 
+navbar:
+  type: dark
+  bg: none
