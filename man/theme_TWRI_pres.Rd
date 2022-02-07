@@ -2,7 +2,7 @@
 % Please edit documentation in R/theme_TWRI_pres.R
 \name{theme_TWRI_pres}
 \alias{theme_TWRI_pres}
-\title{a [ggplot2] theme formatted in the TWRI style for presentations}
+\title{a \link{ggplot2} theme formatted in the TWRI style for presentations}
 \usage{
 theme_TWRI_pres(
   base_size = 16,
@@ -21,5 +21,5 @@ theme_TWRI_pres(
 \item{base_rect_size}{default rect size}
 }
 \description{
-Provides a [ggplot2] theme formatted consistent with TWRI style guidance. Figure aesthetics prioritize design and legibility for use in power point presentations. The intended output is 10 inches by 7.5 inches as 200dpi.
+Provides a \link{ggplot2} theme formatted consistent with TWRI style guidance. Figure aesthetics prioritize design and legibility for use in power point presentations. The intended output is 10 inches by 7.5 inches as 200dpi.
 }

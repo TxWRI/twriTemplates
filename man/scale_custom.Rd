@@ -53,9 +53,9 @@ Custom coloring and filling functions based on unique color palettes
 \details{
 Specific functions include:
 \itemize{
-\item{scale_(color/colour/fill)_discrete_twri}{Discrete palette with either fixed or dynamically extended number of shades}
-\item{scale_(color/colour/fill)_opinionated_twri}{Discrete palette with specific values for "good", "bad", and "neutral"}
-\item{scale_(color/colour/fill)_diverging_twri}{Continuous diverging color palette}
-\item{scale_(color/colour/fill)_continuous}{Continuous color palette}
+\item{scale_(color/colour/fill)\emph{discrete_twri}{Discrete palette with either fixed or dynamically extended number of shades}
+\item{scale}(color/colour/fill)\emph{opinionated_twri}{Discrete palette with specific values for "good", "bad", and "neutral"}
+\item{scale}(color/colour/fill)\emph{diverging_twri}{Continuous diverging color palette}
+\item{scale}(color/colour/fill)_continuous}{Continuous color palette}
 }
 }

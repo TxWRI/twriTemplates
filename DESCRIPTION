@@ -1,7 +1,7 @@
 Package: twriTemplates
 Type: Package
 Title: Templates for TWRI reports
-Version: 0.2.1
+Version: 0.2.1.9999
 Authors@R:
     person(given = "Michael",
     family = "Schramm",
@@ -17,6 +17,7 @@ Imports:
     cowplot,
     fs,
     ggplot2,
+    lifecycle,
     officedown,
     rlang,
     systemfonts
@@ -27,7 +28,8 @@ Suggests:
     ragg,
     rmarkdown,
     tinytex
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2
 Depends: 
     R (>= 2.10)
 Config/testthat/edition: 3
+Roxygen: list(markdown = TRUE)

@@ -6,6 +6,13 @@
 \usage{
 twri_docx(
   base_format = "bookdown::word_document2",
+  tables = list(),
+  plots = list(),
+  lists = list(),
+  mapstyles = list(),
+  page_size = list(),
+  page_margins = list(),
+  reference_num = TRUE,
   toc = FALSE,
   number_sections = TRUE,
   fig_captions = TRUE,
@@ -14,8 +21,8 @@ twri_docx(
 )
 }
 \arguments{
-\item{base_format}{character, either "rmarkdown::word_document" or
-"bookdown::word_document2" (default)}
+\item{base_format}{character, either \code{rmarkdown::word_document} or
+\code{bookdown::word_document2} (default)}
 
 \item{toc}{logical defaults FALSE. The template utilizes the TOC function in
 Word that can be manually removed or customized.}
@@ -26,9 +33,17 @@ Word that can be manually removed or customized.}
 
 \item{reference_docx}{character, specifies the template document to use.}
 
-\item{...}{additional arguments to \@code{rdocx_document}}
+\item{...}{additional arguments to \code{\link[officedown:rdocx_document]{officedown::rdocx_document()}}}
 }
 \description{
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#deprecated}{\figure{lifecycle-deprecated.svg}{options: alt='[Deprecated]'}}}{\strong{[Deprecated]}}
+
+Development on \code{twri_docx()} is complete. It is recommended to use
+\code{officedown::rdocx_document()} directly. This function is retained for older
+templates that include the function, although rendered documents might be
+inconsistent. It is suggested to update any reports to the latest version of
+twriTemplates.
+
 Loads an Rmarkdown template that will produce a Microsoft word document
 consistent with institute brand guidance.
 }
