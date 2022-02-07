@@ -1,0 +1,16 @@
+template:
+  bootstrap: 5
+  bootswatch: yeti
+  params:
+    mathjax: true
+  bslib:
+    base_font: {google: {family: "alegreya", wght: [400, 600], ital: [0, 1]}}
+    heading_font: {google: "Oswald"}
+    code_font: {google: "JetBrains Mono"}
+
+
+authors:
+  TWRI:
+    href: https://twri.tamu.edu
+  Michael Schramm:
+    href: https://github.com/mps9506

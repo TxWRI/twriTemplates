@@ -1,7 +1,7 @@
 Package: twriTemplates
 Type: Package
 Title: Templates for TWRI reports
-Version: 0.2.2
+Version: 0.2.2.9999
 Authors@R:
     person(given = "Michael",
     family = "Schramm",
