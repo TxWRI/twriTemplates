@@ -11,9 +11,9 @@ add_TWRI_logo(plot, scale = 0.25, halign = 0.01, valign = 0.01)
 
 \item{scale}{scale the logo, defaults to 0.25}
 
-\item{halign}{aligns logo within the ggplot \link{0-1}}
+\item{halign}{aligns logo within the ggplot \verb{[0-1]}}
 
-\item{valign}{aligns the logo within the ggplot \link{0-1}}
+\item{valign}{aligns the logo within the ggplot \verb{[0-1]}}
 }
 \value{
 ggplot object

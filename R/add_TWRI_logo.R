@@ -2,8 +2,8 @@
 #'
 #' @param plot ggplot object
 #' @param scale scale the logo, defaults to 0.25
-#' @param halign aligns logo within the ggplot [0-1]
-#' @param valign aligns the logo within the ggplot [0-1]
+#' @param halign aligns logo within the ggplot `[0-1]`
+#' @param valign aligns the logo within the ggplot `[0-1]`
 #' @importFrom cowplot ggdraw draw_plot draw_image
 #' @importFrom fs path_package
 #' @return ggplot object
