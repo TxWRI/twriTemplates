@@ -25,8 +25,9 @@ knitr::opts_chunk$set(
 
 This package provides:
 
--   Rmarkdown templates for work and pdf documents that follow recommended brand guidance
+-   Rmarkdown templates for MS Word and pdf documents that follow recommended brand guidance
 -   ggplot themes for common design styles between projects
+-   custom pkgdown template for TWRI packages
 
 ## Installation
 
@@ -113,5 +114,26 @@ p2
 
 ```{r logo, fig.width=10, fig.height=7.5}
 add_TWRI_logo(p2, scale = 0.2)
+```
+
+### pkgdown
+
+add/edit _pkgdown.yaml in the package root directory:
+
+```{yaml}
+template:
+  package: twriTemplates
+  bootstrap: 5
+
+navbar:
+  type: dark
+  bg: dark
+  structure:
+    right: [search, github]
+```
+
+add the following to the DESCRIPTION:
+```
+Config/Needs/website: TxWRI/twriTemplates
 ```
 

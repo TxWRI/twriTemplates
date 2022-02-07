@@ -12,9 +12,10 @@ status](https://github.com/TxWRI/twriTemplates/workflows/R-CMD-check/badge.svg)]
 
 This package provides:
 
--   Rmarkdown templates for work and pdf documents that follow
+-   Rmarkdown templates for MS Word and pdf documents that follow
     recommended brand guidance
 -   ggplot themes for common design styles between projects
+-   custom pkgdown template for TWRI packages
 
 ## Installation
 
@@ -128,3 +129,23 @@ add_TWRI_logo(p2, scale = 0.2)
 ```
 
 <img src="man/figures/README-logo-1.png" width="100%" />
+
+### pkgdown
+
+add/edit \_pkgdown.yaml in the package root directory:
+
+``` yaml
+template:
+  package: twriTemplates
+  bootstrap: 5
+
+navbar:
+  type: dark
+  bg: dark
+  structure:
+    right: [search, github]
+```
+
+add the following to the DESCRIPTION:
+
+    Config/Needs/website: TxWRI/twriTemplates
