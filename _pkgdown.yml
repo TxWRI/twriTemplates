@@ -1,5 +1,5 @@
 url: https://txwri.github.io/twriTemplates/
+
 template:
-  bootstrap: 5
-  bootswatch: yeti
+  package: twriTemplates
 
