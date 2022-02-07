@@ -11,8 +11,9 @@ template:
 
 navbar:
   type: dark
+  bg: dark
   structure:
-    right: [github]
+    right: [search, github]
 
 
 authors:
