@@ -8,6 +8,7 @@
 
 * twri-docx template includes new chunk options for formatting table and figure 
 captions provided by officedown. (#11)
+* fix issue with citations causing pdf build failures.
 
 # twriTemplates 0.2.1
 ## New features
