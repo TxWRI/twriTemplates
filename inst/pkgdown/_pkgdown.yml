@@ -4,7 +4,7 @@ template:
   params:
     mathjax: true
   bslib:
-    base_font: {google: {family: "alegreya", wght: [400, 600], ital: [0, 1]}}
+    base_font: {google: "Alegreya"}
     heading_font: {google: "Oswald"}
     code_font: {google: "JetBrains Mono"}
 
