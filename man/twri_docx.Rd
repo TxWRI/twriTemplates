@@ -58,7 +58,7 @@ Development on \code{twri_docx()} is complete. It is recommended to use
 \code{officedown::rdocx_document()} directly. This function is retained for older
 templates that include the function, although rendered documents might be
 inconsistent. It is suggested to update any reports to the latest version of
-twriTemplates.
+twriTemplates as \code{twri_docx()} may be removed in future versions.
 
 Loads an Rmarkdown template that will produce a Microsoft word document
 consistent with institute brand guidance.

@@ -7,7 +7,7 @@
 #' `officedown::rdocx_document()` directly. This function is retained for older
 #' templates that include the function, although rendered documents might be
 #' inconsistent. It is suggested to update any reports to the latest version of
-#' twriTemplates.
+#' twriTemplates as `twri_docx()` may be removed in future versions.
 #'
 #' Loads an Rmarkdown template that will produce a Microsoft word document
 #' consistent with institute brand guidance.
@@ -46,6 +46,9 @@ twri_docx <- function(base_format = "bookdown::word_document2",
                       fig_captions = TRUE,
                       reference_docx = "format.docx",
                       ...) {
+  lifecycle::deprecate_warn("0.2.3",
+                            "twri_docx()",
+                            "officedown::docx_document()")
 
   requireNamespace("officedown")
 
