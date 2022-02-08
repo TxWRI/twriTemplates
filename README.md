@@ -5,6 +5,8 @@
 
 <!-- badges: start -->
 
+[![twriTemplates status
+badge](https://txwri.r-universe.dev/badges/twriTemplates)](https://txwri.r-universe.dev)
 [![R build
 status](https://github.com/TxWRI/twriTemplates/workflows/R-CMD-check/badge.svg)](https://github.com/TxWRI/twriTemplates/actions)
 [![codecov](https://codecov.io/gh/TxWRI/twriTemplates/branch/main/graph/badge.svg?token=THDM1CMA83)](https://codecov.io/gh/TxWRI/twriTemplates)
@@ -19,7 +21,17 @@ This package provides:
 
 ## Installation
 
-twriTemplates lives on Github, install using the remotes package:
+The easiest way to install twriTemplates is through the r-universe
+repository:
+
+``` r
+options(repos = c(
+  txwri = 'https://txwri.r-universe.dev',
+  CRAN = 'https://cloud.r-project.org'))
+install.packages("twriTemplates")
+```
+
+twriTemplates also lives on Github and can be built from source using:
 
 ``` r
 install.packages("remotes")

@@ -30,8 +30,18 @@ Useful links:
 \author{
 \strong{Maintainer}: Michael Schramm \email{michael.schramm@ag.tamu.edu} (\href{https://orcid.org/0000-0003-1876-6592}{ORCID})
 
+Other contributors:
+\itemize{
+  \item  Texas Water Resources Institute [copyright holder]
+}
+
 
 \strong{Maintainer}: Michael Schramm \email{michael.schramm@ag.tamu.edu} (\href{https://orcid.org/0000-0003-1876-6592}{ORCID})
+
+Other contributors:
+\itemize{
+  \item  Texas Water Resources Institute [copyright holder]
+}
 
 }
 \keyword{internal}
