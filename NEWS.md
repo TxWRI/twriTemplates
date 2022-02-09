@@ -1,9 +1,10 @@
-# twriTemplates 0.2.2.9999
+# twriTemplates 0.2.3
 
 ## Minor changes
 
 * add pkgdown template for other packages
 * use pkgdown to document package
+* add contributors
 
 # twriTemplates 0.2.2
 
@@ -18,6 +19,7 @@ captions provided by officedown. (#11)
 * fix issue with citations causing pdf build failures.
 
 # twriTemplates 0.2.1
+
 ## New features
 
 * ggplot2_box_legend creates boxplot legend.
