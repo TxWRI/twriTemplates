@@ -33,6 +33,7 @@ Useful links:
 Other contributors:
 \itemize{
   \item  Texas Water Resources Institute [copyright holder]
+  \item Laura DeCicco ('ggplot_box_legend()') [contributor]
 }
 
 
@@ -41,6 +42,7 @@ Other contributors:
 Other contributors:
 \itemize{
   \item  Texas Water Resources Institute [copyright holder]
+  \item Laura DeCicco ('ggplot_box_legend()') [contributor]
 }
 
 }
