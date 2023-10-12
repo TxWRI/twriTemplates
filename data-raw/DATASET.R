@@ -46,3 +46,11 @@ mission_aransas_nerr <- readr::read_csv(file = files,
                                  ))
 
 usethis::use_data(mission_aransas_nerr, overwrite = TRUE)
+
+
+## code to prepare `neon_stage_discharge` dataset goes here
+
+neon_stage_discharge <- readr::read_rds("data-raw/neon.rds")
+neon_stage_discharge <- neon_stage_discharge$dsc_fieldData
+
+usethis::use_data(neon_stage_discharge, overwrite = TRUE)

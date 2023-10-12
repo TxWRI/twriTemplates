@@ -76,3 +76,23 @@
 #' @source NOAA National Estuarine Research Reserve System (NERRS). 2022. System-Wide Monitoring Program. NOAA NERRS Centralized Data Management Office. http://cdmo.baruch.sc.edu/.
 #'
 "mission_aransas_nerr"
+
+
+
+#' Discharge measurements from field-based surveys
+#'
+#' Includes field based stream discharge and stage measurements at the Como Creek
+#' NEON field station.
+#'
+#' @docType data
+#'
+#' @usage data(neon_stage_discharge)
+#'
+#' @format A data frame with 134 rows and 36 variables. Primary variables of interest include:
+#' \describe{
+#'   \item{streamStage}{Measured stream stage in meters}
+#'   \item{finalDischarge}{Corrected measured stream discharge}
+#'   }
+#' @source NEON (National Ecological Observatory Network). n.d. Discharge Field Collection (DP1.20048.001), RELEASE-2022. doi.org/10.48443/eaak-tt31.
+#'
+"neon_stage_discharge"
