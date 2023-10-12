@@ -14,3 +14,10 @@ Dissolved_Oxygen <- readr::read_delim(file = "https://raw.githubusercontent.com/
          Param_Desc = `Parameter Description`)
 
 usethis::use_data(Dissolved_Oxygen, overwrite = TRUE)
+
+
+
+easterwood_weather <- readr::read_csv(file = "data-raw/easterwood.csv",
+                                      col_types = "cDcnn")
+
+usethis::use_data(easterwood_weather, overwrite = TRUE)
