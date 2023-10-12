@@ -1,9 +1,9 @@
 #' Dissolved oxygen measurements from the Tres Palacios river
 #'
 #' Data from the Texas Commission on Environmental Quality Surface Water Quality
-#' Monitoring Information System. The `AverageDO`` field is the mean of dissolved oxygen
-#' concentrations (mg/L) measured at a field site at that day. The MinDO is the minimum
-#' dissolved oxygen concentration measured at that site on that day.
+#' Monitoring Information System. The `Average_DO`` field is the mean of dissolved oxygen
+#' concentrations (mg/L) measured at a field site at that day. The `Min_DO` field
+#' is the minimum dissolved oxygen concentration measured at that site on that day.
 #'
 #' @docType data
 #'
