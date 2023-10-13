@@ -84,3 +84,17 @@ arroyo_wetland <- readr::read_delim(here::here("inst", "extdata", "arroyo_swqm.t
   janitor::clean_names()
 
 usethis::use_data(arroyo_wetland, overwrite = TRUE)
+
+
+## for helsel and hirsch data
+
+library(sbtools)
+query_sb_doi('10.5066/P9JWL6XR')
+item_list_children('5bf30260e4b045bfcae0c205')
+item_list_files('5d5aa237e4b01d82ce8ecf3c')
+item_file_download('5d5aa237e4b01d82ce8ecf3c',
+                   names = "urantds2.csv",destinations = here::here("data-raw","urantds2.csv"))
+uranium_tds <- readr::read_csv(here::here("data-raw","urantds2.csv")) |>
+  janitor::clean_names() |>
+  select(tds, uranium, hco3, definition)
+usethis::use_data(uranium_tds, overwrite = TRUE)

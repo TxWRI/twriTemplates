@@ -193,3 +193,26 @@
 #' @source NEON (National Ecological Observatory Network). n.d. Discharge Field Collection (DP1.20048.001), RELEASE-2022. \doi{10.48443/eaak-tt31}.
 #'
 "neon_stage_discharge"
+
+
+
+#' Uranium and total dissolved solids
+#'
+#' Example dataset from Helsel et al. (2020) that includes
+#' measured concentrations of total dissolved solids (tds) in mg/L and uranium
+#' in parts per billion from the Ogallala aquifer.
+#'
+#' @docType data
+#'
+#' @usage data(uranium_tds)
+#'
+#' @format A data frame with 44 rows and 4 variables:
+#' \describe{
+#'   \item{tds}{Total dissolved solids in mg/L}
+#'   \item{uranium}{Uranium concentration in ppb}
+#'   \item{hco3}{cation composition percent milliequivalents}
+#'   \item{definition}{not documented}
+#'   }
+#' @source Helsel, D.R., Hirsch, R.M., Ryberg, K.R., Archfield, S.A., and Gilroy, E.J., 2020, Statistical Methods in Water Resources - Supporting Materials: U.S. Geological Survey data release, \doi{10.5066/P9JWL6XR}
+#'
+"uranium_tds"

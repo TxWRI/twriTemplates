@@ -1,3 +1,10 @@
+# twriTemplate 0.3.0
+
+## New example datasets
+
+* added `easterwood_weather`, `mission_aransas_nerr`, `arroyo_wetland`, `uranium_tds`, `neon_stage_discharge` datasets. (#25)
+* update name and fields of `dissolved_oxygen` (formerly `Dissolved_Oxygen`) dataset for consistency.
+
 # twriTemplates 0.2.3
 
 ## Minor changes
