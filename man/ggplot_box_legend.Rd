@@ -30,13 +30,13 @@ to existing ggplots using \code{\link[cowplot]{plot_grid}} or \code{\link[patchw
 \examples{
 library(ggplot2)
 library(cowplot)
-ggplot(Dissolved_Oxygen) +
-  geom_boxplot(aes(as.factor(Station_ID),
-                   Average_DO,
-                   group = Station_ID)) +
-  geom_jitter(aes(as.factor(Station_ID),
-                  Average_DO,
-                  group = Station_ID),
+ggplot(dissolved_oxygen) +
+  geom_boxplot(aes(as.factor(station_id),
+                   average_do,
+                   group = station_id)) +
+  geom_jitter(aes(as.factor(station_id),
+                  average_do,
+                  group = station_id),
                width = 0.1, alpha = 0.25) +
  theme_TWRI_print() -> p1
 file <- tempfile(fileext = '.png')

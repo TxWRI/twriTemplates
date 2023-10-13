@@ -1,24 +1,26 @@
-## code to prepare `Dissolved_Oxygen` dataset goes here
+## code to prepare `dissolved_oxygen` dataset goes here
 
 library(dplyr)
+library(readr)
 
-Dissolved_Oxygen <- readr::read_delim(file = "https://raw.githubusercontent.com/mps9506/tbrf/master/data-raw/DO.txt", delim = "|" ) %>%
-  mutate(`End Date` = as.Date(`End Date`, "%m/%d/%Y")) %>%
-  group_by(`Station ID`, `End Date`, `Parameter Code`, `Parameter Description`) %>%
-  summarise(Average_DO = mean(Value),
-            Min_DO = min(Value),
-            .groups = "drop") %>%
-  rename(Station_ID = `Station ID`,
-         Date = `End Date`,
-         Param_Code = `Parameter Code`,
-         Param_Desc = `Parameter Description`)
+dissolved_oxygen_raw <- readr::read_delim(file = "https://raw.githubusercontent.com/mps9506/tbrf/master/data-raw/DO.txt", delim = "|" )
 
-usethis::use_data(Dissolved_Oxygen, overwrite = TRUE)
+write_csv(dissolved_oxygen_raw, here::here("inst", "extdata", "dissolved_oxygen_raw.csv"))
+
+dissolved_oxygen <- dissolved_oxygen_raw |>
+  janitor::clean_names() |>
+  mutate(end_date = as.Date(end_date, "%m/%d/%Y")) |>
+  group_by(station_id, end_date, parameter_code, parameter_description) |>
+  summarise(average_do = mean(value),
+            min_do = min(value),
+            .groups = "drop")
+
+usethis::use_data(dissolved_oxygen, overwrite = TRUE)
 
 
 ## code to prepare `easterwood_weather` dataset goes here
 
-easterwood_weather <- readr::read_csv(file = "data-raw/easterwood.csv",
+easterwood_weather <- readr::read_csv(file = here::here("inst", "extdata", "easterwood.csv"),
                                       col_types = "cDcnn")
 
 usethis::use_data(easterwood_weather, overwrite = TRUE)
@@ -26,10 +28,8 @@ usethis::use_data(easterwood_weather, overwrite = TRUE)
 
 ## code to prepare `mission_aransas_nerr` dataset goes here
 
-files <- c("data-raw/marabwq2020.csv",
-           "data-raw/marabwq2021.csv",
-           "data-raw/marcewq2020.csv",
-           "data-raw/marcewq2021.csv")
+files <- c(here::here("inst", "extdata", "marabwq2021.csv"),
+           here::here("inst", "extdata", "marcewq2021.csv"))
 
 mission_aransas_nerr <- readr::read_csv(file = files,
                                  col_types = readr::cols_only(
@@ -50,7 +50,7 @@ usethis::use_data(mission_aransas_nerr, overwrite = TRUE)
 
 ## code to prepare `neon_stage_discharge` dataset goes here
 
-neon_stage_discharge <- readr::read_rds("data-raw/neon.rds")
+neon_stage_discharge <- readr::read_rds(here::here("data-raw", "neon.rds"))
 neon_stage_discharge <- neon_stage_discharge$dsc_fieldData
 
 usethis::use_data(neon_stage_discharge, overwrite = TRUE)
@@ -58,7 +58,7 @@ usethis::use_data(neon_stage_discharge, overwrite = TRUE)
 
 ## code to prepare `arroyo_wetland` data is here
 
-arroyo_wetland <- readr::read_delim("data-raw/arroyo_swqm.txt",
+arroyo_wetland <- readr::read_delim(here::here("inst", "extdata", "arroyo_swqm.txt"),
                                     delim = "|", escape_double = FALSE,
                                     col_types = readr::cols(`Segment ID` = readr::col_character(),
                                                             `Station ID` = readr::col_character(),

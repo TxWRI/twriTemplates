@@ -29,32 +29,32 @@
 #' @details
 #' Additional details...
 #' LIST OF UNIQUE PARAMETERS
-#' 00010 TEMPERATURE, WATER (DEGREES CENTIGRADE)
-#' 00061 FLOW  STREAM, INSTANTANEOUS (CUBIC FEET PER SEC)
-#' 00070 TURBIDITY, (JACKSON CANDLE UNITS)
-#' 00076 TURBIDITY,HACH TURBIDIMETER (FORMAZIN TURB UNIT)
-#' 00094 SPECIFIC CONDUCTANCE,FIELD (US/CM @ 25C)
-#' 00300 OXYGEN, DISSOLVED (MG/L)
-#' 00400 PH (STANDARD UNITS)
-#' 00530 RESIDUE, TOTAL NONFILTRABLE (MG/L)
-#' 00600 NITROGEN, TOTAL (MG/L AS N)
-#' 00610 NITROGEN, AMMONIA, TOTAL (MG/L AS N)
-#' 00620 NITRATE NITROGEN, TOTAL (MG/L AS N)
-#' 00625 NITROGEN, KJELDAHL, TOTAL (MG/L AS N)
-#' 00630 NITRITE PLUS NITRATE, TOTAL ONE LAB DETERMINED VALUE (MG/L AS N)
-#' 00665 PHOSPHORUS, TOTAL, WET METHOD (MG/L AS P)
-#' 00671 ORTHOPHOSPHATE PHOSPHORUS,DISS,MG/L,FLDFILT<15MIN
-#' 00680 CARBON, TOTAL ORGANIC, NPOC (TOC), MG/L
-#' 01351 FLOW SEVERITY:1=No Flow,2=Low,3=Normal,4=Flood,5=High,6=Dry
-#' 31616 FECAL COLIFORM,MEMBR FILTER,M-FC BROTH, #/100ML
-#' 31648 E. COLI, MTEC, MF, #/100 ML
-#' 31699 E. COLI, COLILERT, IDEXX METHOD, MPN/100ML
-#' 70507 ORTHOPHOSPHATE PHOSPHORUS,DISS,MG/L,FILTER >15MIN
-#' 72053 DAYS SINCE PRECIPITATION EVENT (DAYS)
-#' 74069 STREAM FLOW ESTIMATE (CFS)
-#' 82078 TURBIDITY,FIELD NEPHELOMETRIC TURBIDITY UNITS, N
-#' 82903 DEPTH OF BOTTOM OF WATER BODY AT SAMPLE SITE
-#' 89835 FLOW MTH 1=GAGE 2=ELEC 3=MECH 4=WEIR/FLU 5=DOPPLER
+#' * 00010 TEMPERATURE, WATER (DEGREES CENTIGRADE)
+#' * 00061 FLOW  STREAM, INSTANTANEOUS (CUBIC FEET PER SEC)
+#' * 00070 TURBIDITY, (JACKSON CANDLE UNITS)
+#' * 00076 TURBIDITY,HACH TURBIDIMETER (FORMAZIN TURB UNIT)
+#' * 00094 SPECIFIC CONDUCTANCE,FIELD (US/CM @ 25C)
+#' * 00300 OXYGEN, DISSOLVED (MG/L)
+#' * 00400 PH (STANDARD UNITS)
+#' * 00530 RESIDUE, TOTAL NONFILTRABLE (MG/L)
+#' * 00600 NITROGEN, TOTAL (MG/L AS N)
+#' * 00610 NITROGEN, AMMONIA, TOTAL (MG/L AS N)
+#' * 00620 NITRATE NITROGEN, TOTAL (MG/L AS N)
+#' * 00625 NITROGEN, KJELDAHL, TOTAL (MG/L AS N)
+#' * 00630 NITRITE PLUS NITRATE, TOTAL ONE LAB DETERMINED VALUE (MG/L AS N)
+#' * 00665 PHOSPHORUS, TOTAL, WET METHOD (MG/L AS P)
+#' * 00671 ORTHOPHOSPHATE PHOSPHORUS,DISS,MG/L,FLDFILT<15MIN
+#' * 00680 CARBON, TOTAL ORGANIC, NPOC (TOC), MG/L
+#' * 01351 FLOW SEVERITY:1=No Flow,2=Low,3=Normal,4=Flood,5=High,6=Dry
+#' * 31616 FECAL COLIFORM,MEMBR FILTER,M-FC BROTH, #/100ML
+#' * 31648 E. COLI, MTEC, MF, #/100 ML
+#' * 31699 E. COLI, COLILERT, IDEXX METHOD, MPN/100ML
+#' * 70507 ORTHOPHOSPHATE PHOSPHORUS,DISS,MG/L,FILTER >15MIN
+#' * 72053 DAYS SINCE PRECIPITATION EVENT (DAYS)
+#' * 74069 STREAM FLOW ESTIMATE (CFS)
+#' * 82078 TURBIDITY,FIELD NEPHELOMETRIC TURBIDITY UNITS, N
+#' * 82903 DEPTH OF BOTTOM OF WATER BODY AT SAMPLE SITE
+#' * 89835 FLOW MTH 1=GAGE 2=ELEC 3=MECH 4=WEIR/FLU 5=DOPPLER
 #'
 #' @source TCEQ SWQMIS database.
 #'
@@ -70,20 +70,20 @@
 #'
 #' @docType data
 #'
-#' @usage data(Dissolved_Oxygen)
+#' @usage data(dissolved_oxygen)
 #'
 #' @format A data frame with 236 rows and 6 variables:
 #' \describe{
-#'   \item{Station_ID}{unique water quality monitoring station identifier}
-#'   \item{Date}{sampling date in yyyy-mm-dd format}
-#'   \item{Param_Code}{unique parameter code}
-#'   \item{Param_Desc}{parameter description with units}
-#'   \item{Average_DO}{mean of dissolved oxygen measurement, in mg/L}
-#'   \item{Min_DO}{minimum of dissolved oxygen measurement, in mg/L}
+#'   \item{station_id}{unique water quality monitoring station identifier}
+#'   \item{end_date}{sampling date in yyyy-mm-dd format}
+#'   \item{parameter_code}{unique parameter code}
+#'   \item{parameter_description}{parameter description with units}
+#'   \item{average_do}{mean of dissolved oxygen measurement, in mg/L}
+#'   \item{min_do}{minimum of dissolved oxygen measurement, in mg/L}
 #'   }
 #' @source \url{https://www80.tceq.texas.gov/SwqmisPublic/public/default.htm}
 #'
-"Dissolved_Oxygen"
+"dissolved_oxygen"
 
 
 
@@ -153,8 +153,42 @@
 #'
 #' @format A data frame with 134 rows and 36 variables. Primary variables of interest include:
 #' \describe{
-#'   \item{streamStage}{Measured stream stage in meters}
+#'   \item{averageVelocityUnits}{}
+#'   \item{averageVelocityUnitsQF}{}
+#'   \item{collectDate}{}
+#'   \item{collectedBy}{}
+#'   \item{dataQF}{}
+#'   \item{dischargeUnitsQF}{}
+#'   \item{domainID}{}
+#'   \item{filterParamTime}{}
 #'   \item{finalDischarge}{Corrected measured stream discharge}
+#'   \item{flowCalcQF}{}
+#'   \item{flowCalculation}{}
+#'   \item{handheldDeviceID}{}
+#'   \item{lowVelocityFinalQF}{}
+#'   \item{namedLocation}{}
+#'   \item{profileName}{}
+#'   \item{publicationDate}{}
+#'   \item{recorduid}{}
+#'   \item{release}{}
+#'   \item{samplingProtocolVersion}{}
+#'   \item{siteID}{}
+#'   \item{stageImpractical}{}
+#'   \item{startDate}{}
+#'   \item{stationEntryTest}{}
+#'   \item{streamStage}{Measured stream stage in meters}
+#'   \item{streamStageUnits}{}
+#'   \item{streamStageUnitsQF}{}
+#'   \item{tapeDistanceUnits}{}
+#'   \item{tapeDistanceUnitsQF}{}
+#'   \item{totalDischarge}{}
+#'   \item{totalDischargeCalcQF}{}
+#'   \item{totalDischargeUnits}{}
+#'   \item{uid}{}
+#'   \item{velocitySensorID}{}
+#'   \item{waterDepthUnits}{}
+#'   \item{waterDepthUnitsQF}{}
+#'   \item{waterEdge}{}
 #'   }
 #' @source NEON (National Ecological Observatory Network). n.d. Discharge Field Collection (DP1.20048.001), RELEASE-2022. \doi{10.48443/eaak-tt31}.
 #'

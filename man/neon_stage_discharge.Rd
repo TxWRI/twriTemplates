@@ -7,8 +7,42 @@
 \format{
 A data frame with 134 rows and 36 variables. Primary variables of interest include:
 \describe{
-\item{streamStage}{Measured stream stage in meters}
+\item{averageVelocityUnits}{}
+\item{averageVelocityUnitsQF}{}
+\item{collectDate}{}
+\item{collectedBy}{}
+\item{dataQF}{}
+\item{dischargeUnitsQF}{}
+\item{domainID}{}
+\item{filterParamTime}{}
 \item{finalDischarge}{Corrected measured stream discharge}
+\item{flowCalcQF}{}
+\item{flowCalculation}{}
+\item{handheldDeviceID}{}
+\item{lowVelocityFinalQF}{}
+\item{namedLocation}{}
+\item{profileName}{}
+\item{publicationDate}{}
+\item{recorduid}{}
+\item{release}{}
+\item{samplingProtocolVersion}{}
+\item{siteID}{}
+\item{stageImpractical}{}
+\item{startDate}{}
+\item{stationEntryTest}{}
+\item{streamStage}{Measured stream stage in meters}
+\item{streamStageUnits}{}
+\item{streamStageUnitsQF}{}
+\item{tapeDistanceUnits}{}
+\item{tapeDistanceUnitsQF}{}
+\item{totalDischarge}{}
+\item{totalDischargeCalcQF}{}
+\item{totalDischargeUnits}{}
+\item{uid}{}
+\item{velocitySensorID}{}
+\item{waterDepthUnits}{}
+\item{waterDepthUnitsQF}{}
+\item{waterEdge}{}
 }
 }
 \source{
