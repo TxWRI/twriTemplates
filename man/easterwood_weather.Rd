@@ -15,7 +15,7 @@ A data frame with 4045 rows and 5 variables:
 }
 }
 \source{
-https://www.ncei.noaa.gov/cdo-web/datasets/GHCND/stations/GHCND:USW00003904/detail
+\url{https://www.ncei.noaa.gov/cdo-web/datasets/GHCND/stations/GHCND:USW00003904/detail}
 }
 \usage{
 data(easterwood_weather)

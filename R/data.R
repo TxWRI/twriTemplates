@@ -1,3 +1,66 @@
+#' Water quality data from two sites on the Arroyo Colorado
+#'
+#' Includes water quality monitoring data from two sites on the Arroyo Colorado
+#' from 1973 through 2022. Multiple parameters are included. Station 13079 is upstream
+#' of station 13074. In 2011 a treatment wetland started operation at a wastewater
+#' treatment plant between the two stations. This data is typical of data
+#' downloaded from the TCEQ SWQMIS database.
+#'
+#' @docType data
+#'
+#' @usage data(arroyo_wetland)
+#'
+#' @format A data frame with 7005 rows and 13 variables:
+#' \describe{
+#'   \item{basin_id}{two digit basin identifier}
+#'   \item{segment_id}{TCEQ segment identifier}
+#'   \item{on_segment}{data flag indicating location of station}
+#'   \item{rfa_tag_id}{trip identifer, records with the same value were collected on the same trip and location}
+#'   \item{station_id}{station identifier}
+#'   \item{end_date}{monitoring trip date}
+#'   \item{end_time}{time of collection}
+#'   \item{end_depth}{depth sample was collected at}
+#'   \item{monitoring_type}{monitoring type codes are used to distinguish monitoring purporse. TCEQ DMRG includes a record and description of type codes}
+#'   \item{parameter_code}{distinct parameter codes described below}
+#'   \item{greater_than_less_than}{censored data flag; "<" indicates below the minimum detection limit, ">" indicates above the maximum detection limit}
+#'   \item{value}{measured value}
+#'   \item{mdl}{minimum detection limit reported by the lab}
+#'   }
+#' @details
+#' Additional details...
+#' LIST OF UNIQUE PARAMETERS
+#' 00010 TEMPERATURE, WATER (DEGREES CENTIGRADE)
+#' 00061 FLOW  STREAM, INSTANTANEOUS (CUBIC FEET PER SEC)
+#' 00070 TURBIDITY, (JACKSON CANDLE UNITS)
+#' 00076 TURBIDITY,HACH TURBIDIMETER (FORMAZIN TURB UNIT)
+#' 00094 SPECIFIC CONDUCTANCE,FIELD (US/CM @ 25C)
+#' 00300 OXYGEN, DISSOLVED (MG/L)
+#' 00400 PH (STANDARD UNITS)
+#' 00530 RESIDUE, TOTAL NONFILTRABLE (MG/L)
+#' 00600 NITROGEN, TOTAL (MG/L AS N)
+#' 00610 NITROGEN, AMMONIA, TOTAL (MG/L AS N)
+#' 00620 NITRATE NITROGEN, TOTAL (MG/L AS N)
+#' 00625 NITROGEN, KJELDAHL, TOTAL (MG/L AS N)
+#' 00630 NITRITE PLUS NITRATE, TOTAL ONE LAB DETERMINED VALUE (MG/L AS N)
+#' 00665 PHOSPHORUS, TOTAL, WET METHOD (MG/L AS P)
+#' 00671 ORTHOPHOSPHATE PHOSPHORUS,DISS,MG/L,FLDFILT<15MIN
+#' 00680 CARBON, TOTAL ORGANIC, NPOC (TOC), MG/L
+#' 01351 FLOW SEVERITY:1=No Flow,2=Low,3=Normal,4=Flood,5=High,6=Dry
+#' 31616 FECAL COLIFORM,MEMBR FILTER,M-FC BROTH, #/100ML
+#' 31648 E. COLI, MTEC, MF, #/100 ML
+#' 31699 E. COLI, COLILERT, IDEXX METHOD, MPN/100ML
+#' 70507 ORTHOPHOSPHATE PHOSPHORUS,DISS,MG/L,FILTER >15MIN
+#' 72053 DAYS SINCE PRECIPITATION EVENT (DAYS)
+#' 74069 STREAM FLOW ESTIMATE (CFS)
+#' 82078 TURBIDITY,FIELD NEPHELOMETRIC TURBIDITY UNITS, N
+#' 82903 DEPTH OF BOTTOM OF WATER BODY AT SAMPLE SITE
+#' 89835 FLOW MTH 1=GAGE 2=ELEC 3=MECH 4=WEIR/FLU 5=DOPPLER
+#'
+#' @source TCEQ SWQMIS database.
+#'
+"arroyo_wetland"
+
+
 #' Dissolved oxygen measurements from the Tres Palacios river
 #'
 #' Data from the Texas Commission on Environmental Quality Surface Water Quality
@@ -18,7 +81,7 @@
 #'   \item{Average_DO}{mean of dissolved oxygen measurement, in mg/L}
 #'   \item{Min_DO}{minimum of dissolved oxygen measurement, in mg/L}
 #'   }
-#' @source https://www80.tceq.texas.gov/SwqmisPublic/public/default.htm
+#' @source \url{https://www80.tceq.texas.gov/SwqmisPublic/public/default.htm}
 #'
 "Dissolved_Oxygen"
 
@@ -43,7 +106,7 @@
 #'   \item{dailymaximumdrybulbtemperature}{daily maximum tempreature in degrees F.}
 #'   \item{dailyprecipitation}{daily total precipitation in inches}
 #'   }
-#' @source https://www.ncei.noaa.gov/cdo-web/datasets/GHCND/stations/GHCND:USW00003904/detail
+#' @source \url{https://www.ncei.noaa.gov/cdo-web/datasets/GHCND/stations/GHCND:USW00003904/detail}
 #'
 "easterwood_weather"
 
@@ -73,7 +136,7 @@
 #'   \item{DO_mgl}{dissolved oxygen in mg/L.}
 #'   \item{F_DO_mgl}{data qualifier, <0> indicates approved data.}
 #'   }
-#' @source NOAA National Estuarine Research Reserve System (NERRS). 2022. System-Wide Monitoring Program. NOAA NERRS Centralized Data Management Office. http://cdmo.baruch.sc.edu/.
+#' @source NOAA National Estuarine Research Reserve System (NERRS). 2022. System-Wide Monitoring Program. NOAA NERRS Centralized Data Management Office. \url{http://cdmo.baruch.sc.edu/}.
 #'
 "mission_aransas_nerr"
 
@@ -93,6 +156,6 @@
 #'   \item{streamStage}{Measured stream stage in meters}
 #'   \item{finalDischarge}{Corrected measured stream discharge}
 #'   }
-#' @source NEON (National Ecological Observatory Network). n.d. Discharge Field Collection (DP1.20048.001), RELEASE-2022. doi.org/10.48443/eaak-tt31.
+#' @source NEON (National Ecological Observatory Network). n.d. Discharge Field Collection (DP1.20048.001), RELEASE-2022. \doi{10.48443/eaak-tt31}.
 #'
 "neon_stage_discharge"

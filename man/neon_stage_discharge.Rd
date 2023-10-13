@@ -12,7 +12,7 @@ A data frame with 134 rows and 36 variables. Primary variables of interest inclu
 }
 }
 \source{
-NEON (National Ecological Observatory Network). n.d. Discharge Field Collection (DP1.20048.001), RELEASE-2022. doi.org/10.48443/eaak-tt31.
+NEON (National Ecological Observatory Network). n.d. Discharge Field Collection (DP1.20048.001), RELEASE-2022. \doi{10.48443/eaak-tt31}.
 }
 \usage{
 data(neon_stage_discharge)

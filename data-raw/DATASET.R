@@ -54,3 +54,33 @@ neon_stage_discharge <- readr::read_rds("data-raw/neon.rds")
 neon_stage_discharge <- neon_stage_discharge$dsc_fieldData
 
 usethis::use_data(neon_stage_discharge, overwrite = TRUE)
+
+
+## code to prepare `arroyo_wetland` data is here
+
+arroyo_wetland <- readr::read_delim("data-raw/arroyo_swqm.txt",
+                                    delim = "|", escape_double = FALSE,
+                                    col_types = readr::cols(`Segment ID` = readr::col_character(),
+                                                            `Station ID` = readr::col_character(),
+                                                            `End Date` = readr::col_date(format = "%m/%d/%Y"),
+                                                            `End Time` = readr::col_time(format = "%H:%M"),
+                                                            `Start Date` = readr::col_skip(),
+                                                            `Start Time` = readr::col_skip(),
+                                                            `Start Depth` = readr::col_skip(),
+                                                            `Composite Category` = readr::col_skip(),
+                                                            `Composite Type` = readr::col_skip(),
+                                                            Comment = readr::col_skip(),
+                                                            `Submitting Entity` = readr::col_skip(),
+                                                            `Collecting Entity` = readr::col_skip(),
+                                                            LOQ = readr::col_skip(),
+                                                            `Data Qualifier` = readr::col_skip(),
+                                                            `Verify Flag` = readr::col_skip(),
+                                                            `Validation Flag` = readr::col_skip(),
+                                                            `Rating Flag` = readr::col_skip(),
+                                                            `Nelac Status` = readr::col_skip(),
+                                                            `Exempt Status` = readr::col_skip()),
+                                    comment = "##",
+                                    trim_ws = TRUE) |>
+  janitor::clean_names()
+
+usethis::use_data(arroyo_wetland, overwrite = TRUE)

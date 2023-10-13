@@ -16,7 +16,7 @@ A data frame with 236 rows and 6 variables:
 }
 }
 \source{
-https://www80.tceq.texas.gov/SwqmisPublic/public/default.htm
+\url{https://www80.tceq.texas.gov/SwqmisPublic/public/default.htm}
 }
 \usage{
 data(Dissolved_Oxygen)
