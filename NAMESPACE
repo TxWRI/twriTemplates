@@ -3,6 +3,7 @@
 export(add_TWRI_logo)
 export(get_twri_palettes)
 export(ggplot_box_legend)
+export(path_to_file)
 export(scale_color_continuous_twri)
 export(scale_color_discrete_twri)
 export(scale_color_diverging_twri)
