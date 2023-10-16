@@ -22,6 +22,12 @@
     <loc>https://txwri.github.io/twriTemplates/reference/add_TWRI_logo.html</loc>
   </url>
   <url>
+    <loc>https://txwri.github.io/twriTemplates/reference/arroyo_wetland.html</loc>
+  </url>
+  <url>
+    <loc>https://txwri.github.io/twriTemplates/reference/easterwood_weather.html</loc>
+  </url>
+  <url>
     <loc>https://txwri.github.io/twriTemplates/reference/get_twri_palettes.html</loc>
   </url>
   <url>
@@ -29,6 +35,15 @@
   </url>
   <url>
     <loc>https://txwri.github.io/twriTemplates/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>https://txwri.github.io/twriTemplates/reference/mission_aransas_nerr.html</loc>
+  </url>
+  <url>
+    <loc>https://txwri.github.io/twriTemplates/reference/neon_stage_discharge.html</loc>
+  </url>
+  <url>
+    <loc>https://txwri.github.io/twriTemplates/reference/path_to_file.html</loc>
   </url>
   <url>
     <loc>https://txwri.github.io/twriTemplates/reference/scale_custom.html</loc>
@@ -50,5 +65,8 @@
   </url>
   <url>
     <loc>https://txwri.github.io/twriTemplates/reference/twri_pdf.html</loc>
+  </url>
+  <url>
+    <loc>https://txwri.github.io/twriTemplates/reference/uranium_tds.html</loc>
   </url>
 </urlset>
