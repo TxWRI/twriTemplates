@@ -14,10 +14,10 @@ status](https://github.com/TxWRI/twriTemplates/workflows/R-CMD-check/badge.svg)]
 
 This package provides:
 
--   Rmarkdown templates for MS Word and pdf documents that follow
-    recommended brand guidance
--   ggplot themes for common design styles between projects
--   custom pkgdown template for TWRI packages
+- Rmarkdown templates for MS Word and pdf documents that follow
+  recommended brand guidance
+- ggplot themes for common design styles between projects
+- custom pkgdown template for TWRI packages
 
 ## Installation
 
@@ -64,7 +64,12 @@ Make sure the last function returns `TRUE`.
 Create a new Rmarkdown document, select “From Template”, and the TWRI
 PDF template and TWRI doc template will be available in the list.
 
-![Screenshot of rmarkdown template selector](inst/images/template.png)
+<figure>
+<img src="inst/images/template.png"
+alt="Screenshot of rmarkdown template selector" />
+<figcaption aria-hidden="true">Screenshot of rmarkdown template
+selector</figcaption>
+</figure>
 
 A new .Rmd file will open with example text and guidance in the
 document.
@@ -91,12 +96,12 @@ library(dplyr)
 #>     intersect, setdiff, setequal, union
 
 ## report theme
-p1 <- Dissolved_Oxygen %>%
-  mutate(Station_ID = as.factor(Station_ID)) %>%
-  ggplot(aes(Station_ID, 
-             Min_DO, 
-             fill = Station_ID, 
-             color = Station_ID)) +
+p1 <- dissolved_oxygen %>%
+  mutate(station_id = as.factor(station_id)) %>%
+  ggplot(aes(station_id, 
+             min_do, 
+             fill = station_id, 
+             color = station_id)) +
   geom_boxplot(alpha = 0.5) +
   geom_jitter(alpha = 0.9, width = 0.1, height = 0) +
   theme_TWRI_print() +
@@ -114,13 +119,13 @@ p1
 ``` r
 ## presentation theme
 ## suggested export size is 10 inches wide by 7.5 inches tall.
-p2 <- Dissolved_Oxygen %>%
-  mutate(Station_ID = as.factor(Station_ID)) %>%
-  ggplot(aes(x = Min_DO, 
-             fill = Station_ID, 
-             color = Station_ID)) +
+p2 <- dissolved_oxygen %>%
+  mutate(station_id = as.factor(station_id)) %>%
+  ggplot(aes(x = min_do, 
+             fill = station_id, 
+             color = station_id)) +
   geom_histogram(alpha = 0.5) +
-  facet_wrap(~Station_ID) +
+  facet_wrap(~station_id) +
   theme_TWRI_pres() +
   scale_color_discrete_twri(name = "Station ID") +
   scale_fill_discrete_twri(name = "Station ID") +

@@ -1,7 +1,7 @@
 Package: twriTemplates
 Type: Package
 Title: Templates for TWRI reports
-Version: 0.2.3
+Version: 0.3.0
 Authors@R: c(
     person(given = "Michael",
     family = "Schramm",
@@ -35,7 +35,7 @@ Suggests:
     ragg,
     rmarkdown,
     tinytex
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.3
 Depends: 
     R (>= 2.10)
 Config/testthat/edition: 3
