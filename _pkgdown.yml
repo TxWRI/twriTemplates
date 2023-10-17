@@ -42,8 +42,8 @@ reference:
   desc: >
     Obtain hex codes and values for the TWRI specified color palette.
   contents:
-  - get_twri_pal
-  - twri_pal
+  - get_twri_palettes
+  - starts_with("twri_pal")"
 
 - title: rmarkdown templates
   desc: >
