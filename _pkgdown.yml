@@ -38,6 +38,13 @@ reference:
   - add_TWRI_logo
   - ggplot_box_legend
 
+- title: Palettes
+  desc: >
+    Obtain hex codes and values for the TWRI specified color palette.
+  contents:
+  - get_twri_pal
+  - twri_pal
+
 - title: rmarkdown templates
   desc: >
     Templates for use with rmarkdown.
