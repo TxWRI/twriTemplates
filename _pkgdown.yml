@@ -9,3 +9,47 @@ navbar:
   bg: dark
   structure:
     right: [search, github]
+
+reference:
+- title: Example data
+  desc: >
+    These are example datasets used in the [TWRI r-manual](https://txwri.github.io/r-manual/).
+  contents:
+  - dissolved_oxygen
+  - arroyo_wetland
+  - easterwood_weather
+  - mission_aransas_nerr
+  - neon_stage discharge
+  - path_to_file
+  - uranium_tds
+
+- title: ggplot2 themes
+  desc: >
+    Themes control the display of all non-data elements of the plot. Use
+    `ggplot2::theme()` to tweak individual settings.
+  contents:
+  - theme_TWRI_pres
+  - theme_TWRI_print
+
+- title: Helpers
+  desc: >
+    Various helper functions for use with ggplot2.
+  contents:
+  - add_TWRI_logo
+  - ggplot_box_legend
+
+- title: rmarkdown templates
+  desc: >
+    Templates for use with rmarkdown.
+  contents:
+  - twri_docx
+  - twri_pdf
+
+- title: Scales
+  desc: >
+    This package provides a handful of scales for use with color or fill
+    aesthetics in ggplot2.
+  contents:
+  - starts_with("scale_")
+
+
