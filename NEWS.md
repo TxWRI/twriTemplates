@@ -7,6 +7,10 @@
 * update name and fields of `dissolved_oxygen` (formerly `Dissolved_Oxygen`) dataset for consistency.
 * `path_to_file` returns file paths to example data.
 
+## Minor changes
+
+* ggplot2 themes updated to use linewidth argument instead of size.
+
 ## Documentation
 
 * pkgdown function reference groups functions by topic.
