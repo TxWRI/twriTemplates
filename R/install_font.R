@@ -20,15 +20,14 @@ install_font <- function(font) {
   message(font_path)
   ## windows
   if(.Platform$OS.type == "windows") {
-    out <- try(shell.exec(font_path))
+    try(shell.exec(font_path))
   } else if(Sys.info()["sysname"] == "Darwin") {
     ## not 100% sure this works, don't have mac to try
     font_path <- paste0("open ", font_path)
-    out <- try(system(font_path, wait = FALSE))
+    try(system(font_path, wait = FALSE))
   } else if(Sys.info()["sys.name"] == "unix") {
     ## untested
     font_path <- paste0("xdg-open ", font_path)
-    out <- try(system(font_path, wait = FALSE))
+    try(system(font_path, wait = FALSE))
   }
-  return(invisible(out))
 }
