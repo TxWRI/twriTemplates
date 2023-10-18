@@ -25,7 +25,7 @@ install_font <- function(font) {
     ## not 100% sure this works, don't have mac to try
     font_path <- paste0("open ", font_path)
     try(system(font_path, wait = FALSE))
-  } else if(Sys.info()["sys.name"] == "unix") {
+  } else if(Sys.info()["sysname"] == "unix") {
     ## untested
     font_path <- paste0("xdg-open ", font_path)
     try(system(font_path, wait = FALSE))
