@@ -28,6 +28,11 @@ install_font <- function(font) {
   } else if(grepl("linux-gnu", R.version$os)) {
     ## untested
     xdg_open_font_path <- paste0("xdg-open ", font_path)
-    try(system(xdg_open_font_path, wait = FALSE))
+    x <- try(system(xdg_open_font_path, wait = FALSE),
+        silent = TRUE)
+    if(is(x, "try-error")) {
+      message("install fonts from", paste0(font_path))
+      return(invisible(NULL))
+    } else {return(x)}
   }
 }
