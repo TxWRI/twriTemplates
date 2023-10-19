@@ -5,6 +5,7 @@
 #' @param font one of `c("CrimsonPro","OpenSansCondensed")`
 #'
 #' @return Hopefully nothing
+#' @importFrom fs path_package
 #' @export
 #'
 #' @examples
@@ -16,14 +17,16 @@ install_font <- function(font) {
                                    paste(font_names, collapse = ", "))
 
   ##get file path
-  font_path <- system.file("fonts", font, package = "twriTemplates")
+  font_path <- fs::path_package("twriTemplates", "fonts", font)
   message(font_path)
   ## windows
   if(.Platform$OS.type == "windows") {
+    ## shell exec returns nothing
     try(shell.exec(font_path))
   } else if(Sys.info()["sysname"] == "Darwin") {
     ## not 100% sure this works, don't have mac to try
     open_font_path <- paste0("open ", font_path)
+    ## system returns 0 on success
     try(system(open_font_path, wait = FALSE))
   } else if(grepl("linux-gnu", R.version$os)) {
     ## untested
