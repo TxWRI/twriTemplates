@@ -23,11 +23,11 @@ install_font <- function(font) {
     try(shell.exec(font_path))
   } else if(Sys.info()["sysname"] == "Darwin") {
     ## not 100% sure this works, don't have mac to try
-    font_path <- paste0("open ", font_path)
-    try(system(font_path, wait = FALSE))
-  } else if(Sys.info()["sysname"] == "unix") {
+    open_font_path <- paste0("open ", font_path)
+    try(system(open_font_path, wait = FALSE))
+  } else if(grepl("linux-gnu", R.version$os)) {
     ## untested
-    font_path <- paste0("xdg-open ", font_path)
-    try(system(font_path, wait = FALSE))
+    xdg_open_font_path <- paste0("xdg-open ", font_path)
+    try(system(xdg_open_font_path, wait = FALSE))
   }
 }
