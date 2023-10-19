@@ -203,6 +203,7 @@ manual_pal_flex <- function(values, extend = FALSE){
 # Retrieve palette with reasonable defaults upon failure
 # Tries for specific request, else tries to default to base, else fails
 # Also checks palette length meets fx requirements, else modifies
+#' @importFrom methods is
 #' @keywords internal
 retrieve_palette <- function(name, type = c("base", "op", "div", "cont")){
 
@@ -214,12 +215,12 @@ retrieve_palette <- function(name, type = c("base", "op", "div", "cont")){
   pal <- try(utils::getFromNamespace(pal_name, "twriTemplates"))
 
   # if fails, attempt to use base palette
-  if (class(pal) == "try-error") {
+  if (is(pal, "try-error")) {
     pal <- try(utils::getFromNamespace(pal_base, "twriTemplates"))
   }
 
   # if base fails, throw error
-  if (class(pal) == "try-error") {
+  if (is(pal, "try-error")) {
     stop("No such palette exists. ",
          "Run get_twri_palettes() to see options. ",
          call. = FALSE)

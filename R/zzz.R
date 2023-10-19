@@ -28,13 +28,20 @@ init_fonts <- function(fonts) {# nocov start
     }
 
 
-  if(length(fonts[fonts$family == "Minion Pro",]$path) == 0){
-    packageStartupMessage("Minion Pro font was not found,
-                          please install from https://agrilife.tamu.edu/wp-content/uploads/2021/03/AgriFonts.zip")
+  if(length(fonts[fonts$family == "Crimson Pro",]$path) == 0){
+    packageStartupMessage("Crimson Pro font was not found,
+                          please install using install_font('CrimsonPro')")
   }
-  ## don't need to register minion pro
+  ## don't need to register crimson pro but just in case
+  CrimsonPro <- fs::path_package("twriTemplates", "fonts", "CrimsonPro", "CrimsonPro-Regular.ttf")
+  CrimsonPro_Bold <- fs::path_package("twriTemplates", "fonts", "CrimsonPro", "CrimsonPro-Bold.ttf")
+  CrimsonPro_Italic <- fs::path_package("twriTemplates", "fonts", "CrimsonPro", "CrimsonPro-Italic.ttf")
+  systemfonts::register_font("CrimsonPro",
+                             plain =  CrimsonPro,
+                             bold =  CrimsonPro_Bold,
+                             italic =  CrimsonPro_Italic)
 
-  ## register cabin
+  ## register OpenSansCondensed
   OpenSansCondensed <- fs::path_package("twriTemplates", "fonts", "OpenSansCondensed", "OpenSansCondensed-Light.ttf")
   OpenSansCondensed_Bold <- fs::path_package("twriTemplates", "fonts", "OpenSansCondensed", "OpenSansCondensed-Bold.ttf")
   OpenSansCondensed_Italic <- fs::path_package("twriTemplates", "fonts", "OpenSansCondensed", "OpenSansCondensed-LightItalic.ttf")

@@ -20,7 +20,7 @@ A data frame with 140352 rows and 10 variables:
 }
 }
 \source{
-NOAA National Estuarine Research Reserve System (NERRS). 2022. System-Wide Monitoring Program. NOAA NERRS Centralized Data Management Office. \url{http://cdmo.baruch.sc.edu/}.
+NOAA National Estuarine Research Reserve System (NERRS). 2022. System-Wide Monitoring Program. NOAA NERRS Centralized Data Management Office. \url{https://cdmo.baruch.sc.edu/}.
 }
 \usage{
 data(mission_aransas_nerr)

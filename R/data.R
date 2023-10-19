@@ -81,7 +81,7 @@
 #'   \item{average_do}{mean of dissolved oxygen measurement, in mg/L}
 #'   \item{min_do}{minimum of dissolved oxygen measurement, in mg/L}
 #'   }
-#' @source \url{https://www80.tceq.texas.gov/SwqmisPublic/public/default.htm}
+#' @source \url{https://www80.tceq.texas.gov/SwqmisWeb/public/crpweb.faces#}
 #'
 "dissolved_oxygen"
 
@@ -136,7 +136,7 @@
 #'   \item{DO_mgl}{dissolved oxygen in mg/L.}
 #'   \item{F_DO_mgl}{data qualifier, <0> indicates approved data.}
 #'   }
-#' @source NOAA National Estuarine Research Reserve System (NERRS). 2022. System-Wide Monitoring Program. NOAA NERRS Centralized Data Management Office. \url{http://cdmo.baruch.sc.edu/}.
+#' @source NOAA National Estuarine Research Reserve System (NERRS). 2022. System-Wide Monitoring Program. NOAA NERRS Centralized Data Management Office. \url{https://cdmo.baruch.sc.edu/}.
 #'
 "mission_aransas_nerr"
 

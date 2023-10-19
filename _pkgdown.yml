@@ -37,6 +37,7 @@ reference:
   contents:
   - add_TWRI_logo
   - ggplot_box_legend
+  - install_font
 
 - title: Palettes
   desc: >

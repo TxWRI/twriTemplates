@@ -1,4 +1,4 @@
-#' RMD Word Template for TWRI
+#' RMD docx template for TWRI
 #'
 #' @description
 #' `r lifecycle::badge("deprecated")`
