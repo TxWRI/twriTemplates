@@ -2,7 +2,7 @@
 % Please edit documentation in R/twri_rmd.R
 \name{twri_docx}
 \alias{twri_docx}
-\title{RMD Word Template for TWRI}
+\title{RMD docx template for TWRI}
 \usage{
 twri_docx(
   base_format = "bookdown::word_document2",
