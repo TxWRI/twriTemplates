@@ -203,6 +203,7 @@ manual_pal_flex <- function(values, extend = FALSE){
 # Retrieve palette with reasonable defaults upon failure
 # Tries for specific request, else tries to default to base, else fails
 # Also checks palette length meets fx requirements, else modifies
+#' @importFrom methods is
 #' @keywords internal
 retrieve_palette <- function(name, type = c("base", "op", "div", "cont")){
 
