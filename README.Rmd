@@ -21,7 +21,7 @@ knitr::opts_chunk$set(
 
 [![twriTemplates status badge](https://txwri.r-universe.dev/badges/twriTemplates)](https://txwri.r-universe.dev)
 [![R build status](https://github.com/TxWRI/twriTemplates/workflows/R-CMD-check/badge.svg)](https://github.com/TxWRI/twriTemplates/actions)
-[![codecov](https://codecov.io/gh/TxWRI/twriTemplates/branch/main/graph/badge.svg?token=THDM1CMA83)](https://codecov.io/gh/TxWRI/twriTemplates)
+[![codecov](https://codecov.io/gh/TxWRI/twriTemplates/branch/main/graph/badge.svg?token=THDM1CMA83)](https://app.codecov.io/gh/TxWRI/twriTemplates)
 <!-- badges: end -->
 
 This package provides:
